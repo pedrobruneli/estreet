@@ -1,40 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
     <meta name="theme-color" content="#000000" />
     <title>ESTREET</title>
-    <script>
-      window.addEventListener("resize",function() {
-    
-    var textos = document.getElementsByClassName("texto-imagens");
-    var numFontSize = window.getComputedStyle(textos[0]).getPropertyValue("font-size");
-    numFontSize = Number(numFontSize.replace("px", ""));
-    for(var i = 0; i != textos.length; i ++) {
-        console.log(window.innerWidth)
-        if(window.innerWidth < 1900) {
-          textos[i].style.fontSize = (5*window.innerWidth)/66 + "px";
-        } else {
-          textos[i].style.fontSize = "150px";
-        }
-    }
-})
-window.addEventListener("load",function() {
-    
-    var textos = document.getElementsByClassName("texto-imagens");
-    var numFontSize = window.getComputedStyle(textos[0]).getPropertyValue("font-size");
-    numFontSize = Number(numFontSize.replace("px", ""));
-    for(var i = 0; i != textos.length; i ++) {
-        console.log(window.innerWidth)
-        if(window.innerWidth < 1900) {
-          textos[i].style.fontSize = (5*window.innerWidth)/66 + "px";
-        } else {
-          textos[i].style.fontSize = "150px";
-        }
-    }
-})
-    </script>
+    <script src="script-responsive-fonts.js"></script>
   </head>
   <body>
     <div id="root"></div>
