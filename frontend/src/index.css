@@ -1,0 +1,32 @@
+:root{
+    --font-nav: "Old London";
+    --font-drops: "Monument Extended Ultrabold";
+    --color-primary: #623BFF;
+}
+body{
+    touch-action: pan-x, pan-y;
+}
+
+*{
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+html, body{
+    background-color: black;
+}
+
+a, a:hover{
+    text-decoration: none;
+    color: unset;
+}
+
+@font-face {
+    font-family: "Old London";
+    src: url(assets/fonts/OldLondon.ttf);
+}
+
+@font-face {
+    font-family: "Monument Extended Ultrabold";
+    src: url("assets/fonts/monumentextended-ultrabold.otf");
+}

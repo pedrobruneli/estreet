@@ -1,0 +1,28 @@
+.swiper-banners{
+    z-index: 0 !important;
+    width: 100%;
+    object-fit: cover;
+    height: 700px;
+}
+
+.swiper-slide-banners {
+    overflow-y: hidden !important;
+    height: 100%;
+}
+.swiper-slide-banners img{
+    width: 100%;
+    position: relative;
+}
+.swiper-pagination{
+    bottom: 40px !important;
+}
+
+.swiper-pagination-bullet-active{
+    background: black !important;
+}
+
+@media screen and (max-width: 970px) {
+    .banner-container img, .banner-container, .swiper-banners{
+        height: 500px;
+    }
+}

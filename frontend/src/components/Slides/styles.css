@@ -1,0 +1,31 @@
+.banner-images-container{
+    display: inline-block;
+    position: relative;
+}
+
+.container-arames1{
+    position: absolute;
+    z-index: 1;
+    margin-top: -20px;
+}
+
+.arames1{
+    display: flex;
+    height: 40px;
+}
+
+.banner-container img{
+    height: 700px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.container-arames2{
+    position: absolute;
+    margin-top: -20px;
+}
+
+.arames2{
+    display: flex;
+    height: 40px;
+}

@@ -1,0 +1,127 @@
+@import 'index.css';
+
+.container-drops{
+    height: 420px;
+    background-color: white;
+}
+
+#drop-text{
+    font-family: var(--font-drops);
+    font-size: 46px;
+    text-align: center;
+    margin-top: 63px;
+    text-shadow: 4px 3px 5px grey;
+}
+.container-arames3{
+    position: absolute;
+    z-index: 1;
+    margin-top: -20px;
+}
+.arames3{
+    display: flex;
+    height: 40px;
+}
+
+/* SWIPER */
+
+.swiper-wrapper{
+    width: max-content;
+}
+
+.slider-promo{
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.slider-promo img{
+    width: 100%;
+    height: auto;
+    transition: 0.3s;
+}
+
+.slider-promo img:hover{
+    transform: scale(1.25);
+}
+
+.swiper-promo{
+    width: 900px;
+}
+.navigation-slide-items-next-promo{
+    cursor: pointer;
+    position: absolute;
+    left: 90%;
+    top: 80px;
+    z-index: 999;
+}
+
+.navigation-slide-items-prev-promo{
+    cursor: pointer;
+    position: absolute;
+    top: 80px;
+    left: 8%;
+    z-index: 999;
+}
+
+.navigation-slide-items-next-promo svg{
+    width: 20px;
+    height: 20px;
+}
+
+.navigation-slide-items-prev-promo svg{
+    width: 20px;
+    height: 20px;
+}
+
+.slideitem-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-container-promo{
+    width: 1200px;
+    position: relative;
+}
+
+@media screen and (max-width: 1200px) {
+    .swiper-container-promo{
+        width: 900px;
+    }
+    .swiper-promo{
+        width: 650px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .swiper-container-promo{
+        width: 700px;
+    }
+    .swiper-promo{
+        width: 500px;
+        margin-top: -30px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .swiper-container-promo{
+        width: 600px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .swiper-promo{
+        width: 300px;
+    }
+    .swiper-container-promo{
+        width: 400px;
+    }
+    .navigation-slide-items-next-promo, .navigation-slide-items-prev-promo {
+        top: 100px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    #drop-text{
+        font-size: 35px;
+    }
+}

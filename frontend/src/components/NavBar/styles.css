@@ -1,0 +1,49 @@
+@import 'index.css';
+
+header{
+    align-items: center;
+    font-family: var(--font-nav), sans-serif;
+    background-color: black;
+}
+
+.user{
+    height: 50px;
+    width: 50px;
+    color: var(--color-primary);
+}
+
+.cart{
+    height: 80px;
+    width: 80px;
+}
+.estreet-nav-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    color: white;
+    font-size: 40px;
+}
+
+.estreet-nav-content > * {
+    cursor: pointer;
+}
+
+.estreet-nav-content img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 990px) {
+    .estreet-nav-content{
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .estreet-nav-content{
+        flex-direction: column;
+        padding: 20px;
+    }
+}

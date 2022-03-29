@@ -1,0 +1,53 @@
+@import 'index.css';
+
+.footer-colecoes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+}
+
+.footer-colecoes > *{
+    position: relative;
+    margin-top: 30px;
+    text-align: center;
+    overflow-y: hidden;
+    cursor: pointer;
+}
+
+.footer-colecoes > * > img{
+    transition: 0.3s;
+    object-fit: contain;
+    width: 80%;
+}
+
+.footer-colecoes > * > img:hover{
+    transform: scale(1.05);
+}
+
+.saias-container{
+    margin-top: -10px !important;
+}
+
+
+.texto-imagens{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 120px;
+    color: white;
+    font-family: var(--font-drops);
+    text-shadow: 0 0 10px black;
+}
+
+.container-arames-colecoes{
+    margin-top: -20px;
+    position: absolute;
+    z-index: 999;
+}
+
+.arames-colecoes{
+    display: flex;
+    height: 40px;
+}   
